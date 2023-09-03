@@ -1,13 +1,137 @@
 body {
+  background: #F2F2F2;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.no-link{
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
 }
+
+.no-link:hover {
+  transform: scale(1.1);
+  font-weight: 500;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.product-desc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-page{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  margin: 0 auto;
+}
+
+.blog-top{
+  margin: 1rem 2rem 0.5rem 2rem;
+  display: flex;
+}
+
+.blog-bottom{
+  margin: 0 2rem;
+  width: 100%;
+}
+
+.other-products-container {
+  width: 15rem;
+  display: flex;
+}
+
+.other-product-card {
+  margin: 0 2rem 2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Optional: Add margin-top for spacing */
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.custom-search .ant-input-affix-wrapper{
+  border-radius: 20px!important;
+  width: 30rem;
+  height: 40px;
+  font-size: 24px;
+}
+
+.custom-search .ant-input-search-button{
+  display: none;
+}
+
+.order-separator {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+.preview-container{
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  margin: 2px 0 0 0;
+  border: 2px gray dashed;
+  border-radius: 8px;
+}
+
+.preview-container img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.invalid-field {
+  border: 1px solid #F54040!important;
+  background-color: white;
+}
+
+.menu-btn {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.danger-menu-btn {
+  font-weight: 700;
+}
+
+img, svg {
+  vertical-align: baseline!important;
+}
+
+
+
+
